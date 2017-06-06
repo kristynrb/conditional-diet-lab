@@ -1,9 +1,12 @@
-require 'bundler'
-Bundler.require
-
 
 # 1. Write a method called no_donuts that takes in a number of donuts as an argument. If the number of donuts is greater than zero then this method should return "Get back on your diet!" otherwise it should return "Good job, Homer!"
-
+def no_donuts num
+    if num > 0
+        "Get back on your diet!"
+    else
+        "Good job, Homer!"
+    end
+end
 
 
 # 2. Homer's diet has been going well and we're going to cut him some slack. Write a new method called less_donuts that takes in a number of donuts as an argument and tells Homer good job when he eats less than 3 donuts, to slow down if he's eaten exactly 3 donuts, and to get back on his diet if he eats more than 3 donuts.
